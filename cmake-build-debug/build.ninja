@@ -41,36 +41,68 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/michael/yang/asio_test/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target asio_test
+# Object build statements for EXECUTABLE target asio_client
 
 
 #############################################
-# Order-only phony target for asio_test
+# Order-only phony target for asio_client
 
-build cmake_object_order_depends_target_asio_test: phony || CMakeFiles/asio_test.dir
+build cmake_object_order_depends_target_asio_client: phony || CMakeFiles/asio_client.dir
 
-build CMakeFiles/asio_test.dir/src/main.cpp.o: CXX_COMPILER__asio_test_Debug /home/michael/yang/asio_test/src/main.cpp || cmake_object_order_depends_target_asio_test
-  DEP_FILE = CMakeFiles/asio_test.dir/src/main.cpp.o.d
+build CMakeFiles/asio_client.dir/src/main_client.cpp.o: CXX_COMPILER__asio_client_Debug /home/michael/yang/asio_test/src/main_client.cpp || cmake_object_order_depends_target_asio_client
+  DEP_FILE = CMakeFiles/asio_client.dir/src/main_client.cpp.o.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -I/home/michael/yang/asio_test/asio-1.24.0/include
-  OBJECT_DIR = CMakeFiles/asio_test.dir
-  OBJECT_FILE_DIR = CMakeFiles/asio_test.dir/src
+  OBJECT_DIR = CMakeFiles/asio_client.dir
+  OBJECT_FILE_DIR = CMakeFiles/asio_client.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target asio_test
+# Link build statements for EXECUTABLE target asio_client
 
 
 #############################################
-# Link the executable asio_test
+# Link the executable asio_client
 
-build asio_test: CXX_EXECUTABLE_LINKER__asio_test_Debug CMakeFiles/asio_test.dir/src/main.cpp.o
+build asio_client: CXX_EXECUTABLE_LINKER__asio_client_Debug CMakeFiles/asio_client.dir/src/main_client.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/asio_test.dir
+  OBJECT_DIR = CMakeFiles/asio_client.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = asio_test
-  TARGET_PDB = asio_test.dbg
+  TARGET_FILE = asio_client
+  TARGET_PDB = asio_client.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target asio_server
+
+
+#############################################
+# Order-only phony target for asio_server
+
+build cmake_object_order_depends_target_asio_server: phony || CMakeFiles/asio_server.dir
+
+build CMakeFiles/asio_server.dir/src/main_server.cpp.o: CXX_COMPILER__asio_server_Debug /home/michael/yang/asio_test/src/main_server.cpp || cmake_object_order_depends_target_asio_server
+  DEP_FILE = CMakeFiles/asio_server.dir/src/main_server.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/michael/yang/asio_test/asio-1.24.0/include
+  OBJECT_DIR = CMakeFiles/asio_server.dir
+  OBJECT_FILE_DIR = CMakeFiles/asio_server.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target asio_server
+
+
+#############################################
+# Link the executable asio_server
+
+build asio_server: CXX_EXECUTABLE_LINKER__asio_server_Debug CMakeFiles/asio_server.dir/src/main_server.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/asio_server.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = asio_server
+  TARGET_PDB = asio_server.dbg
 
 
 #############################################
@@ -107,7 +139,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/michael/yang/asio_test/cmake-build-debug
 
-build all: phony asio_test
+build all: phony asio_client asio_server
 
 # =============================================================================
 # Built-in targets

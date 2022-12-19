@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "asio_test",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,9 +40,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "asio_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-asio_test-Debug-bd640fdb2af0fee5e7a6.json",
-					"name" : "asio_test",
+					"id" : "asio_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asio_client-Debug-d8ebaf250ec02ab29ffe.json",
+					"name" : "asio_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asio_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asio_server-Debug-b025b0a8aa8d6dbe1778.json",
+					"name" : "asio_server",
 					"projectIndex" : 0
 				}
 			]

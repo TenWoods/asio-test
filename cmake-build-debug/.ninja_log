@@ -1,3 +1,7 @@
 # ninja log v5
 1	168	1671439793929700064	CMakeFiles/asio_test.dir/src/main.cpp.o	d08b5bc97772adb5
 168	202	1671439793959700057	asio_test	a2261cde9bf61df7
+1	1130	1671442457519149108	CMakeFiles/asio_client.dir/src/main_client.cpp.o	6a7bc192f58bd187
+1131	1221	1671442457609149089	asio_client	1e65f538af1cdbcb
+1	1087	1671442509699138315	CMakeFiles/asio_server.dir/src/main_server.cpp.o	7ab39c8c16b60f27
+1088	2328	1671442510939138058	asio_server	87b9594571ec7094
