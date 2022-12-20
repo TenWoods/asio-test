@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_asio_client: phony || CMakeFiles/asio_cl
 
 build CMakeFiles/asio_client.dir/src/main_client.cpp.o: CXX_COMPILER__asio_client_Debug /home/michael/yang/asio_test/src/main_client.cpp || cmake_object_order_depends_target_asio_client
   DEP_FILE = CMakeFiles/asio_client.dir/src/main_client.cpp.o.d
-  FLAGS = -g -std=gnu++17
+  FLAGS = -g -std=gnu++11
   INCLUDES = -I/home/michael/yang/asio_test/asio-1.24.0/include
   OBJECT_DIR = CMakeFiles/asio_client.dir
   OBJECT_FILE_DIR = CMakeFiles/asio_client.dir/src
@@ -83,7 +83,7 @@ build cmake_object_order_depends_target_asio_server: phony || CMakeFiles/asio_se
 
 build CMakeFiles/asio_server.dir/src/main_server.cpp.o: CXX_COMPILER__asio_server_Debug /home/michael/yang/asio_test/src/main_server.cpp || cmake_object_order_depends_target_asio_server
   DEP_FILE = CMakeFiles/asio_server.dir/src/main_server.cpp.o.d
-  FLAGS = -g -std=gnu++17
+  FLAGS = -g -std=gnu++11
   INCLUDES = -I/home/michael/yang/asio_test/asio-1.24.0/include
   OBJECT_DIR = CMakeFiles/asio_server.dir
   OBJECT_FILE_DIR = CMakeFiles/asio_server.dir/src
