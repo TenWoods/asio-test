@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "asio_client"
+			"path" : "asio_server"
 		}
 	],
 	"backtrace" : 1,
@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 8,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 8,
+				"line" : 10,
 				"parent" : 0
 			}
 		]
@@ -43,9 +43,6 @@
 			[
 				{
 					"fragment" : "-g"
-				},
-				{
-					"fragment" : "-std=gnu++11"
 				}
 			],
 			"includes" : 
@@ -53,6 +50,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "/home/michael/yang/asio_test/asio-1.24.0/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/michael/yang/asio_test/src/headers"
 				}
 			],
 			"language" : "CXX",
@@ -62,7 +63,7 @@
 				[
 					1
 				],
-				"standard" : "11"
+				"standard" : "14"
 			},
 			"sourceIndexes" : 
 			[
@@ -70,7 +71,7 @@
 			]
 		}
 	],
-	"id" : "asio_client::@6890427a1f51a3e7e1df",
+	"id" : "asio_server::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -86,8 +87,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "asio_client",
-	"nameOnDisk" : "asio_client",
+	"name" : "asio_server",
+	"nameOnDisk" : "asio_server",
 	"paths" : 
 	{
 		"build" : ".",
@@ -106,7 +107,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -115,12 +117,17 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/main_client.cpp",
+			"path" : "src/main_server.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/common.h",
+			"path" : "src/headers/common.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/headers/Connection.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],
